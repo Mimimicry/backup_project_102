@@ -1,0 +1,20 @@
+Make foreign key in database for deleting users with roles::Done
+Make foreign key in database for deleting users with posts::Done
+Fix up Controllers ie. separate them into folders according to function::Done
+Have Users get a different Homepage than admins::Done
+Have a SuperAdmin to assign admin roles to other users:: Can only make admin when hard coded
+Make a page where it guides the users on what they can do::Done
+Make Users default upon registering::Done
+
+<!--Done-->
+
+
+Projec 102 To-do list
+1.) Make First name Middle name and Last name, where both first and last are required but not middle 
+:: Done
+
+2.) Make an input of date of birth and display their age. 
+::Done
+
+3.) Make an onclick button that shows contact information.
+:: Done
