@@ -10,9 +10,9 @@
     @if(!Auth::guest())
         @if(Auth::check())
             @if(Auth::user()->id == $posts->user_id)
-                <a href="/posts/{{$posts->id}}/edit" class="btn btn-primary">Edit</a>
-                {!!Form::open(['action'=> ['App\Http\Controllers\PostController@destroy',$posts->id],
-                                'metohd'=>'POST','class'=>'btn btn-right'])!!}
+                <a href="/posts/{{$posts->id}}/edit" class="btn btn-primary btn-sm">Edit</a>
+                {{-- {!!Form::open(['action'=> ['App\Http\Controllers\PostController@destroy',$posts->id],
+                                'method'=>'POST','class'=>'btn btn-right'])!!}
                 {{Form::hidden('_method','DELETE')}}
                 {{Form::submit('Delete',['class' => 'btn btn-danger'])}}
                 {!!Form::close()!!}            
