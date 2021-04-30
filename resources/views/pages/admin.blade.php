@@ -5,7 +5,7 @@
 <h1>Admin</h1>
 </div>
 
-
+{{-- 
 <div> 
     <button onclick="show_hide()" class="float-right">Show and hide</button>
 </div>
@@ -16,7 +16,7 @@
     </div>
 </div>
 
-
+ --}}
 
 
 @endsection
