@@ -15,7 +15,15 @@
                                 'method'=>'POST','class'=>'btn btn-right'])!!}
                 {{Form::hidden('_method','DELETE')}}
                 {{Form::submit('Delete',['class' => 'btn btn-danger'])}}
-                {!!Form::close()!!}            
+                {!!Form::close()!!}  --}}
+                
+                <form action="{{ route('posts.destroy', $posts->id)}}" method="POST" class="btn btn-right">
+                    @csrf
+                    {{method_field('DELETE')}}
+                    
+                    <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')">Delete</button>
+                
+                </form>
             @endif   
         @endif  
     @endif  
